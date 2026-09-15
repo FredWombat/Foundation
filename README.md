@@ -23,7 +23,9 @@ A AJOUTER :
 
 -Page outils : Outils pratique pour militants (ex.: partager des vidéos vus sur twitter, lettre type de demande a la prefecture, mappage des lieux d'affichage, etc... )
 
--Page dédiées au témoignages locaux : Vidéos, photos, Tik-tok, Insta, reportages, recits, etc..
+-Page dédiée aux témoignages locaux : Vidéos, photos, Tik-tok, Insta, reportages, recits, etc..
+
+-Page dédiée a la Watch Tower : Endroit ou l'on peut chercher facilement ce qui correspond a ce que l'on chercher pour agir, Dispatch, on se sent capable dans certains domaines, on veut se rendre utilem on est curieux, on veut juste s'onformer, la Watch Tower vous oriente vers le thématique, le groupe local, ou les personnes a contecter. 
 
 -D'autres trucs mais j'ai oublié, WIP
 
