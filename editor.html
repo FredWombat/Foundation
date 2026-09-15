@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Organizer - Éditeur</title>
+  <link rel="stylesheet" href="editor-style.css">
+</head>
+<body>
+  <div class="editor-container">
+    <!-- Header -->
+    <header class="editor-header">
+      <h1>Éditeur de Liens</h1>
+      <div class="header-actions">
+        <button class="btn btn-export" id="exportBtn">📥 Exporter .js</button>
+        <button class="btn btn-import" id="importBtn">📤 Importer .js</button>
+        <button class="btn btn-reset" id="resetBtn">🔄 Réinitialiser</button>
+        <a href="index.html" class="btn btn-back">← Retour</a>
+      </div>
+    </header>
+
+    <div class="editor-main">
+      <!-- Sidebar gauche -->
+      <aside class="editor-sidebar">
+        <!-- Section Ajouter -->
+        <section class="editor-section">
+          <h2>➕ Ajouter un lien</h2>
+          <form id="addLinkForm" class="editor-form">
+            <div class="form-group">
+              <label for="addCategory">Catégorie</label>
+              <select id="addCategory" required>
+                <option value="">-- Sélectionner --</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="addSubcategory">Sous-catégorie</label>
+              <select id="addSubcategory" required>
+                <option value="">-- Sélectionner --</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="addTitle">Titre</label>
+              <input type="text" id="addTitle" required>
+            </div>
+
+            <div class="form-group">
+              <label for="addUrl">URL</label>
+              <input type="url" id="addUrl" required>
+            </div>
+
+            <div class="form-group">
+              <label for="addSource">Source</label>
+              <input type="text" id="addSource" required>
+            </div>
+
+            <div class="form-group">
+              <label for="addLevel">Niveau</label>
+              <select id="addLevel" required>
+                <option value="1">Débutant</option>
+                <option value="2">Intermédiaire</option>
+                <option value="3">Spécialiste</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Types</label>
+              <div class="checkbox-group" id="addTypeGroup">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="addTags">Tags (séparés par virgule)</label>
+              <input type="text" id="addTags" placeholder="tag1, tag2, tag3">
+            </div>
+
+            <button type="submit" class="btn btn-add">Créer le lien</button>
+          </form>
+        </section>
+
+        <!-- Section Rechercher -->
+        <section class="editor-section">
+          <h2>🔍 Rechercher & Éditer</h2>
+          <div class="form-group">
+            <input type="text" id="searchInput" placeholder="Chercher par titre, ID, catégorie...">
+          </div>
+          <div id="searchResults" class="search-results">
+            <p class="empty-message">Aucun résultat</p>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Main editor -->
+      <main class="editor-main-content">
+        <div id="editContent" class="edit-content">
+          <p class="empty-message">Sélectionnez un lien pour l'éditer</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Hidden file input for import -->
+  <input type="file" id="fileInput" accept=".js,.json" style="display: none;">
+
+  <script src="link-data.js"></script>
+  <script src="script.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>

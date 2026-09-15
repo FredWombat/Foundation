@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Organizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header"></header>
+
+  <div class="container">
+    <!-- Categories -->
+    <nav class="categories">
+      <button class="category-btn active" data-category="ia">IA</button>
+      <button class="category-btn" data-category="datacenter">Data-center</button>
+    </nav>
+
+    <!-- Level Filter -->
+    <nav class="level-filter">
+      <span class="filter-label">Niveau de difficulté:</span>
+      <button class="level-btn active" data-level="all">Tous</button>
+      <button class="level-btn" data-level="1">Débutant</button>
+      <button class="level-btn" data-level="2">Intermédiaire</button>
+      <button class="level-btn" data-level="3">Spécialiste</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Thumbnail Grid -->
+      <section class="grid-section">
+        <h2 id="category-title">AI</h2>
+        <p id="category-description">Artificial Intelligence resources and tools</p>
+        <div class="thumbnail-grid" id="thumbnailGrid"></div>
+      </section>
+
+ <aside class="sidebar">
+ <!-- Section Réseau -->
+  <div class="sidebar-section">
+    <h3 class="sidebar-section-title">Réseau</h3>
+    <ul class="sidebar-links" id="sidebarLinksReseau">
+      <!-- Liens generés par JS -->
+    </ul>
+  </div>
+
+
+  <!-- Section Local -->
+  <div class="sidebar-section">
+    <h3 class="sidebar-section-title">Local</h3>
+    <ul class="sidebar-links" id="sidebarLinksLocal">
+      <!-- Liens generés par JS -->
+    </ul>
+  </div>
+
+ 
+</aside>
+
+
+
+    </div>
+  </div>
+
+  <script src="link-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
